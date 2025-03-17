@@ -2,3 +2,6 @@
 title: "Home"
 format: html
 ---
+Here is my image:
+
+![Kirby](kirby.jpg)
