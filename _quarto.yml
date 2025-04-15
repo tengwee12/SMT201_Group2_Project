@@ -2,12 +2,31 @@ project:
   type: website
 
 website:
-  title: "SMT201 Project"
+  title: "新女神転生"
   navbar:
     left:
-      - text :"overviewww"
-    right:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: Abowwwut
+      - text: "Project Proposal"
+        href: index.qmd
+      - text: "Methodology"
+        href: methodology.qmd
+      - text: "Analysis & Results"
+        href: analysis_results.qmd
+      - text: "Lessons Learnt"
+        href: lessons_learnt.qmd
+      - text: "Poster"
+        href: poster.qmd
+      - text: "About"
+        href: about.qmd
+  sidebar:
+    title: "On this page"
+    contents:
+      - Project Motivation
+      - Project Objectives
+      - Scope of Work
+      - Project Schedule (Gantt Chart)
+
+format:
+  html:
+    theme: minty # Or choose a different theme
+    css: styles.css  # If you have custom CSS
+    page-layout: full # Correct placement

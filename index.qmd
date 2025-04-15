@@ -1,7 +1,39 @@
 ---
-title: "Home"
-format: html
+sidebar:
+  title: "On this page"
+  contents:
+    - Project Motivation
+    - Project Objectives
+    - Scope of Work
+    - Project Schedule (Gantt Chart)
+format:
+  html:
+    page-layout: full
 ---
-Here is my image:
 
-![Kirby](kirby.jpg)
+# Project Motivation
+
+As an island with ever-increasing energy requirements, balancing that with our international renewable energy commitments requires extensive research and analysis to maximise the use of our significantly-limited land availability to help to future-proof our energy portfolio.
+
+# Project Objectives
+
+Our Project aims to analyze, document and visualize different areas of concern, including land-usage patterns and geographical factors, to evaluate the prospective feasibility and potential utility/output of solar farms within Singapore's land area, and ultimately to precisely narrow down specific areas for future implementation. 
+
+# Scope of Work
+
+**Geographical Analysis:**
+
+* Aspect and Slope Analysis
+* Solar Irradiation Data Collection
+* Temperature Data Collection
+* Land Area Calculations
+
+**Land Usage:**
+
+* Land Use Plan derived visualizations
+* OSM Data Usage
+* Narrowing down potential areas of implementation
+
+# Project Schedule (Gantt Chart)
+
+[Add your project schedule or Gantt chart here. You can use markdown to create a table or insert an image of your Gantt chart.]
