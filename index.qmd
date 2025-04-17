@@ -36,4 +36,4 @@ Our Project aims to analyze, document and visualize different areas of concern, 
 
 # Project Schedule (Gantt Chart)
 
-[Add your project schedule or Gantt chart here. You can use markdown to create a table or insert an image of your Gantt chart.]
+![ganttchart](ganttChart.jpg)
