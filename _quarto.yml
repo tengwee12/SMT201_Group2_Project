@@ -8,9 +8,19 @@ website:
       - text: "Project Proposal"
         href: index.qmd
       - text: "Methodology"
-        href: methodology.qmd
+        menu: # This indicates a dropdown menu
+          - text: "Research"
+            href: methodology_research.qmd
+          - text: "Data Collection"
+            href: methodology_data_collection.qmd
+          - text: "Data Preparation"
+            href: methodology_data_preparation.qmd
       - text: "Analysis & Results"
-        href: analysis_results.qmd
+        menu: # This indicates a dropdown menu
+          - text: "Preparing and Identifying of Potential Sites"
+            href: methodology_site_identification.qmd
+          - text: "Solar Farm Estimations and Calculations"
+            href: solar_carm_calculations.qmd
       - text: "Lessons Learnt"
         href: lessons_learnt.qmd
       - text: "Poster"
