@@ -1,0 +1,56 @@
+---
+title: "Data Preparation"
+format:
+  html:
+    page-layout: full
+---
+
+# Land Use Categorization & Area Calculation
+
+With our focus on the regions of **Murai** and **Lim Chu Kang**, the first step was to classify usable land based on its **land use description (`LU_DESC`)**. This field identified four relevant categories:
+
+- **OPEN SPACE**
+- **AGRICULTURE**
+- **WATERBODY**
+- **PARK**
+
+![target_land_use_desc](LU%20categories.jpg)
+
+To quantify how much land we could potentially allocate for solar deployment, we needed to calculate the **total area** for each land use category. While the attribute table did not explicitly display area, each polygon inherently carries a geometric property for area. 
+
+To access this, we used the **Field Calculator** in QGIS to create a new field named `Area_m2`, with the following expression: "$area"
+
+This computed the area of each polygon in square meters, assuming the layer was projected in **EPSG:3414 (SVY21)** — Singapore’s standard coordinate reference system.
+
+---
+
+## Using Group Stats to Summarize Areas
+
+To efficiently compute total land area per category, we used the **Group Stats** plugin:
+
+1. Go to **Plugins > Manage and Install Plugins**
+2. Search for **Group Stats** and install it
+3. Open **Group Stats** from the menu
+4. Set the following:
+   - **Layer**: your region of interest (e.g., Murai and Lim Chu Kang)
+   - **Rows**: `LU_DESC`
+   - **Values**: select `Area_m2` and set the **Function** to `Sum`
+
+This configuration computes the **total area of polygons**, grouped by their land use type.
+
+---
+
+## Results
+
+| Land Use Type | Area (m²)   | Percentage Coverage |
+|---------------|-------------|---------------------|
+| PARK          | 164,400     | X%                  |
+| OPEN SPACE    | 4,691,840   | X%                  |
+| AGRICULTURE   | 5,046,540   | X%                  |
+| WATERBODY     | 7,774,950   | X%                  |
+
+![group_stats](group%20stats.jpg)
+
+The land use-based area breakdown above serves as a foundation for assessing the **solar deployment feasibility** across these zones. Allocation percentages were applied to each category based on existing deployments (e.g., **35% for reservoirs**, **30% for agriculture**) and national policy constraints, to estimate potential solar output.
+
+---
