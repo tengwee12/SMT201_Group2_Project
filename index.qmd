@@ -13,11 +13,15 @@ format:
 
 # Project Motivation
 
-As an island with ever-increasing energy requirements, balancing that with our international renewable energy commitments requires extensive research and analysis to maximise the use of our significantly-limited land availability to help to future-proof our energy portfolio.
+Singapore is an island country that is 735.7 square kilometers in size, making it the twentieth smallest country in the world. It possesses barely any natural resources and thus relies on imports for most of its needs.
+
+As Singapore's ever-increasing energy requirements continue to grow with its prosperity, renewable energy as a resource is becoming not just useful, but more necessary. 
+
+We hope to enhance Singapore's energy portfolio in order to reduce the reliance on other countries, by exploring the viability of solar farms. We shall achieve this by identifying key areas within Singapore and determining their suitability. This project aims to provide insightful data on how Singapore could diversify its energy sources to provide greater long-term sustainability for the country.
 
 # Project Objectives
 
-Our Project aims to analyze, document and visualize different areas of concern, including land-usage patterns and geographical factors, to evaluate the prospective feasibility and potential utility/output of solar farms within Singapore's land area, and ultimately to precisely narrow down specific areas for future implementation. 
+Our Project aims to analyze, document and visualize different areas of concern, including land-usage patterns and geographical factors, to evaluate the prospective feasibility and calculate the potential utility/output of these solar farms within Singapore's land area.
 
 # Scope of Work
 
