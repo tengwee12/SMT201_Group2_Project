@@ -61,5 +61,12 @@
     "title": "Poster",
     "section": "",
     "text": "Team Poster:\n\n\n\nPoster"
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "Conclusion\nThrough our comprehensive geospatial and feasibility analysis, we have identified Lim Chu Kang and Poyan Reservoir as the most viable zones for solar farm deployment in Singapore. These areas stand out due to their combination of large contiguous land or water surface area, minimal terrain constraints, and strategic alignment with existing infrastructure and national sustainability objectives.\nOur slope and aspect evaluation confirms that Lim Chu Kang’s flat terrain requires minimal land modification, while its existing road and building networks can support auxiliary solar farm operations. Additionally, the area’s potential for agrivoltaics—combining agriculture with solar energy generation—offers a dual-use approach that enhances land efficiency without compromising food production. Poyan Reservoir, on the other hand, benefits from the successful precedent set by Tengeh Reservoir and exhibits shoreline characteristics suitable for essential infrastructure. Its accessibility and existing road connectivity make it a promising site for floating solar farm deployment.\nWhile Murai Subzone presents some potential, its fragmented land pattern and lower return on investment make it less favorable compared to the two aforementioned sites.\nBy combining GIS-based land analysis, solar irradiation data, and realistic deployment factors, our study highlights the scalability, practicality, and long-term benefit of focusing future solar farm efforts on these two key locations. This approach not only supports Singapore’s Green Plan 2030 and energy security strategy, but also underscores the value of integrated, land-sensitive development in a space-constrained nation."
   }
 ]
