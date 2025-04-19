@@ -198,6 +198,7 @@ Optionally, we can categorize the target area by land use.
 
 ![Fig 2.11](./assets/tab3_fig11.jpg)
 
+![Fig 2.12](./assets/tab3_fig12.jpg)
 
 
 
