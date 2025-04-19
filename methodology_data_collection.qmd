@@ -11,7 +11,7 @@ The following datasets were utilised in this project to inform decision-making a
 
 | Dataset Name | Source                           | Description                   |
 |--------------|----------------------------------|-------------------------------|
-| Dataset A    | [gov.example](https://gov.example) | Contains city zoning info     |
-| Dataset B    | [solar.org](https://solar.org)     | Solar radiation measurements  |
-| Dataset C    | [Survey](https://example.com/survey) | On-site inspection results    |
+| Master Plan 2019    | [https://www.ura.gov.sg/](https://www.ura.gov.sg/) | Contains city land allocation usage GEOJSON data    |
+| Solar Irradiation Data   | [https://power.larc.nasa.gov/](https://power.larc.nasa.gov/)     | NASA project providing data on prospective renweable energy potential  |
+| Singapore Topographical Data    | [https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/) | United States Geographical Service Earth Explorer platform, provided DEM data sets for Topographical data in the Singapore region    |
 
