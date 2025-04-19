@@ -1,0 +1,4 @@
+# Lessons Learnt
+
+##  Challenges We faced
+Gathering hard geographical visualization data to justify our points proved to be rather difficult. A lot of reliable, accessible geographical data was paywalled under ARCGis, so we had to find workarounds for that, while ensuring the same level of firsthand accuracy that we aspired to. This is why we resorted using the USGS Earthfinder to find specific raster maps for conversion, as well as using NASA's POWER project, which while reliable, was a somewhat esoteric data source, specifically when it came to an aspect like solar irradiation, where figures are quoted, but specific, detailed sourcing proved hard to find. We managed to use our
