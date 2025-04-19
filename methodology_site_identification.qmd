@@ -1,0 +1,203 @@
+# Elevation Map
+As we only care for the raster data of Singapore, we will be clipping out the raster data of the other countries. We will use the CostalOutline shapefile layer for this.
+
+Firstly, go to Processing > Toolbox to open the Processing Toolbox, then type ‘fix geometries’ into the search bar. Click the Fix geometries tool, under Vector geometry.
+
+![Fig 1.1](./assets/docs_fig_1.jpg)
+
+Select the input layer as CostalOutline, and repair method as ‘Structure’. Run the program when ready.
+
+![Fig 1.2](./assets/docs_fig_2.jpg)
+
+We will now use this output layer ‘Fixed Geometries’ for our raster clipping.
+
+
+Go to Raster > Extraction > Clip Raster by Mask Layer. Use the following inputs:
+
+![Fig 1.3](./assets/docs_fig_3.jpg)
+
+Click the wrench and select the following:
+
+![Fig 1.4](./assets/docs_fig_4.jpg)
+
+When ready, run the program. The result should look like this:
+
+![Fig 1.5](./assets/docs_fig_5.jpg)
+
+You may now export this layer as a GEOTIFF file. We shall call it SG_Elevation.
+
+# Slope
+To determine the slope data, we will follow the method taught to us: Raster > Analysis > Slope, and inputting SG_Elevation as the input layer:
+
+![Fig 1.6](./assets/docs_fig_6.jpg)
+
+Next, we shall reclassify the slope data. Go to Processing > Toolbox and search ‘Reclassify by Table’. Input the following rows:
+
+![Fig 1.7](./assets/docs_fig_7.jpg)
+
+Run when ready, the result should be like this:
+
+![Fig 1.8](./assets/docs_fig_8.jpg)
+
+Save this as a GEOTIFF, we shall call it Slope_Degree.
+
+
+# Aspect
+
+Aspect data, put simply, is data that describes the orientation that a slope landform takes. We will obtain this via the following method: go to Raster > Analysis > Aspect, then use the SG_Elevation layer as the input layer:
+
+![Fig 1.9](./assets/docs_fig_9.jpg)
+
+Click ‘Run’ when ready, and your result should look like so:
+
+![Fig 1.10](./assets/docs_fig_10.jpg)
+
+Save this as a GEOTIFF, we shall call it Aspect. 
+Now, double click the layer and go to the ‘Symbology’ tab. Input the following:
+
+![Fig 1.11](./assets/docs_fig_11.jpg)
+
+The value determines the direction the slope faces: 0 and 360 degrees is North, 90 is East, 180 is South, and 270 is West. After labelling, the result should appear like so:
+
+![Fig 1.12](./assets/docs_fig_12.jpg)
+
+
+# Proximity Map to Roads
+
+One we have obtained a potential site for our solar farms, we want to see how connected the area is to road infrastructure. Below is a vector layer containing our potential site land space, superimposed with vector data from OSM for roads in Singapore:
+
+![Fig 1.13](./assets/docs_fig_13.jpg)
+
+We will be constructing a proximity map for these roads. First, we Open Attribute Table for our osm roads data and add this field in the field calculator:
+
+![Fig 1.14](./assets/docs_fig_14.jpg)
+
+Then, go to Raster > Conversion > Rasterize and input the following:
+
+![Fig 1.15](./assets/docs_fig_15.jpg)
+
+Output extent shall be the base layer. The result is like so:
+
+![Fig 1.16](./assets/docs_fig_16.jpg)
+
+Next, go to Processing Toolbox panel, navigate to GDAL Analysis > Proximity (raster distance).
+
+![Fig 1.17](./assets/docs_fig_17.jpg)
+
+Your result will be like this:
+
+![Fig 1.18](./assets/docs_fig_18.jpg)
+
+# Reclassifying
+
+We will now reclassify our proximity map so that we can determine suitable areas for constructing various types of infrastructure within solar farms. From the menu bar, click on Processing > Toolbox, and search for Reclassify by Table. The input layer shall be the proximity map we just made. Input the following:
+
+![Fig 1.19](./assets/docs_fig_19.jpg)
+
+The result will be like this:
+
+![Fig 1.20](./assets/docs_fig_20.jpg)
+
+Since this is quite vague, we shall edit the Symbology of the layer like so:
+
+![Fig 1.21](./assets/docs_fig_21.jpg)
+
+We will also lower the opacity of the layer so that we can see the base vector layer. The result is this:
+
+![Fig 1.22](./assets/docs_fig_22.jpg)
+
+
+# Obtaining Target Areas
+Since we only consider specific regions like Lim Chu Kang and Murai, we need to preprocess the map data such that the focus is shifted to these regions. This is so that analysis is simpler, and the data we handle becomes more lightweight.
+
+From Data Preparation -> Natural Reserve Buffer, the relevant restricted regions have already been filtered out. We will use that layer as a stepping stone to obtain the true regions that we analyze.
+
+The only other polygon layer that we need is the Master Plan 2019 Subzone Layer.
+
+* Open the attribute table of the MP19 Subzone Layer.
+* Open “Select Features by Expression”.
+* Enter this line:
+* “SUBZONE_N” in (‘LIM CHU KANG’, ‘MURAI’) and click “Select Features”.
+
+![Fig 2.1](./assets/tab3_fig1.jpg)
+
+![Fig 2.2](./assets/tab3_fig2.jpg)
+
+Save this layer as a temporary layer in GeoPackage format.
+
+Given we have another layer that accounted for the restricted buffer zones, we want to overlay the temporary Lim Chu Kang + Murai layer to obtain the workable regions for solar farm deployment.
+
+* Navigate to Vector -> Geoprocessing Tools -> Intersection.
+* Select the input layer as the buffered layer, and the overlay layer as the temporary layer.
+* Set invalid feature filtering to “Do not Filter”.
+
+![Fig 2.3](./assets/tab3_fig3.jpg)
+
+![Fig 2.4](./assets/tab3_fig4.jpg)
+
+
+* Click “Run” to obtain the region consisting of Lim Chu Kang and Murai areas, but this time without including the restricted nature reserve areas.
+* Save this layer as “Lim Chu Kang + Murai” in GeoPackage format.
+
+The main area in question is Lim Chu Kang. Hence, we want to further concentrate on the Lim Chu Kang region. To do this:
+
+* Open the attribute table of the temporary Lim Chu Kang + Murai Layer, and select the subzone where its name is Lim Chu Kang. That is, key in the expression: “SUBZONE_N” = ‘LIM CHU KANG’ and save it as “Lim Chu Kang Temp”
+* Navigate to Vector -> Geoprocessing Tools -> Intersection.
+* Select the input layer as the “Lim Chu Kang + Murai” layer, and the overlay layer as “Lim Chu Kang Temp”.
+* Similarly apply “Do not Filter” to invalid feature filtering.
+* Click “Run” to obtain the relevant region.
+
+![Fig 2.5](./assets/tab3_fig5.jpg)
+
+It would be a waste not to consider the already existing agrivoltaics initiatives and the surrounding reservoirs near Lim Chu Kang. Hence, we will add it to the target regions as well.
+
+* Open the attribute table of “Lim Chu Kang + Murai” layer.
+* Select “Fields and Values”, “LU_DESC”, and click on “All Unique”.
+* Notice that there are 4 different types of land use within these regions: AGRICULTURE (agrivoltaics), WATERBODY (reservoirs), OPEN, and PARK.
+
+* Enter this expression: “LU_DESC” = ‘AGRICULTURE’
+* Click “Select Features”, then click “Close”.
+* Right click on the layer, and Save Selected Features as “Lim Chu Kang + Murai - Agrivoltaics”.
+
+* Repeat the above 3 steps with the expression “LU_DESC” = ‘WATERBODY’ and the layer name “Lim Chu Kang + Murai - Waterbodies’.
+
+![Fig 2.6](./assets/tab3_fig6.jpg)
+
+However, not every water body is a reservoir. For this, we consulted Google Maps to determine which ones are reservoirs. Afterwards, we manually select these regions, as there are not too many of them.
+
+* At the top navigation, toggle Select Features by Single Click, as shown in the picture below.
+* Manually select the areas that denote reservoirs according to Google Maps.
+
+![Fig 2.7](./assets/tab3_fig7.jpg)
+
+* Save these selected features as “Lim Chu Kang + Murai - Reservoirs”
+
+We are finally ready to merge everything together.
+
+* Navigate to Vector -> Data Management Tools -> Merge Vector Layers
+**Select THREE inputs:**
+* The temporary Intersection layer of Lim Chu Kang
+* Lim Chu Kang + Murai - Agrivoltaics
+* Lim Chu Kang + Murai - Reservoirs
+* Click “Run”, and verify that the output looks something like below.
+
+![Fig 2.8](./assets/tab3_fig8.jpg)
+
+![Fig 2.8](./assets/tab3_fig9.jpg)
+
+
+* Save this final layer as “Lim Chu Kang + Murai - Target”.
+
+Optionally, we can categorize the target area by land use.
+
+* Right click on “Lim Chu Kang + Murai - Target”, and access Properties -> Symbology.
+* From the top-most dropdown box, select “Categorized”, and the Value to “LU_DESC”.
+* Click “Classify”, then click “Ok”.
+
+![Fig 2.10](./assets/tab3_fig10.jpg)
+
+![Fig 2.11](./assets/tab3_fig11.jpg)
+
+
+
+
