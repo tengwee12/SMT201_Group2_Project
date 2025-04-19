@@ -59,7 +59,7 @@ Once we identified the main areas we wanted to perform in-depth analyses on, we 
 
 We used data from USGS Earth Explorer, which was open source and allowed us to find detailed topographical data on the Singapore region
 
-![Fig 1.6, Singapore Topography data acquisition](usgs_topography_data.jpg)
+![Fig 1.6, Singapore Topography data acquisition](assets/usgs_topography_data.jpg)
 
 To specify the Singapore region, we selected a polygon to isolate the Singapore region and searched for DEM raster maps for elevation pertaining to our selected region, which gave us two different raster maps. As the data was in two separate DEM raster files, we had to manually merge the two in QGIS to get a whole raster map for topography containing all of Singapore, which we used as the base to process out the rest of our aspect and slope data. 
 
