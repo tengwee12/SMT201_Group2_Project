@@ -14,4 +14,8 @@ The following datasets were utilised in this project to inform decision-making a
 | Master Plan 2019    | [https://www.ura.gov.sg/](https://www.ura.gov.sg/) | Contains city land allocation usage GEOJSON data    |
 | Solar Irradiation Data   | [https://power.larc.nasa.gov/](https://power.larc.nasa.gov/)     | NASA project providing data on prospective renweable energy potential  |
 | Singapore Topographical Data    | [https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/) | United States Geographical Service Earth Explorer platform, provided DEM data sets for Topographical data in the Singapore region    |
+| NParks Parks and Nature Reserves | [https://data.gov.sg/datasets?query=nature+reserves&resultId=d_77d7ec97be83d44f61b85454f844382f&page=1](https://data.gov.sg/datasets?query=nature+reserves&resultId=d_77d7ec97be83d44f61b85454f844382f&page=1) | Contains nature reserves in Singapore, under the purview of NParks |
+| gis_osm_buildings_a_free_1 | [https://download.geofabrik.de/asia/malaysia-singapore-brunei.html](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html) | Contains dataset on buildings in Singapore |
+| gis_osm_roads_free_1	| [https://download.geofabrik.de/asia/malaysia-singapore-brunei.html](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html) | Contains dataset on roads in Singapore |
+
 
