@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - QGISWebMap
 
 website:
   title: "新女神転生"
@@ -23,6 +25,8 @@ website:
         href: lessons_learnt.qmd
       - text: "Poster"
         href: poster.qmd
+      - text: "Web Map"
+        href: pages/map.qmd
       - text: "About"
         href: about.qmd
   sidebar:
