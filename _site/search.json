@@ -60,14 +60,14 @@
     "href": "pages/map.html",
     "title": "Web Map",
     "section": "",
-    "text": "The map below displays groups of visualisations:\nSG Open Space: Overview of Singapore, contains data on areas to consider and avoid Buffer Zones: Overview of identified area of interest (Lim Chu Kang + Murai), with buffer zones to accomodate natural reserves POI: Place of Interest containing all land space that is considered potentially viable Rivers: Considering the suitability of the rivers in our POI for solar farm installations LCK: Considering the suitability of Lim Chu Kang in our POI for solar farm installations"
+    "text": "The map below displays groups of visualisations:\nSG Open Space: Overview of Singapore, contains data on areas to consider and avoid\nBuffer Zones: Overview of identified area of interest (Lim Chu Kang + Murai), with buffer zones to accomodate natural reserves\nPOI: Place of Interest containing all land space that is considered potentially viable\nRivers: Considering the suitability of the rivers in our POI for solar farm installations\nLCK: Considering the suitability of Lim Chu Kang in our POI for solar farm installations"
   },
   {
     "objectID": "lessons_learnt.html",
     "href": "lessons_learnt.html",
     "title": "Lessons Learnt",
     "section": "",
-    "text": "fuck you"
+    "text": "Gathering hard geographical visualization data to justify our points proved to be rather difficult. A lot of reliable, accessible geographical data was paywalled under ARCGis, so we had to find workarounds for that, while ensuring the same level of firsthand accuracy that we aspired to. This is why we resorted using the USGS Earthfinder to find specific raster maps for conversion, as well as using NASA’s POWER project, which while reliable, was a somewhat esoteric data source, specifically when it came to an aspect like solar irradiation, where figures are quoted, but specific, detailed sourcing proved hard to find.\nSingapore particularly proved to be somewhat challenging to really build an interesting case study around. Much of the available geographical data, most of which was in the raster format, failed to capture existing geographical variations within Singapore, given their lower resolution. The one exception was the USGS topography data. Additionally, Singapore itself lacks the temperature or irradiation variance to meaningfully provide any justifications to build farms in one area over another.\n\n\n\n\nExplore the possibility of building installations on the rooftops of industrial buildings, seeing that Singapore has a significant proportion of land being occupied by industrial installations.\nGo more in depth into agrivoltaics, more precisely into the infrastructure needed and the measures to be made for the panels to coexist effectively with the existing agricultural infrastructure"
   },
   {
     "objectID": "lessons_learnt.html#considerations",
@@ -82,5 +82,19 @@
     "title": "Lessons Learnt",
     "section": "",
     "text": "In our analysis, we decided"
+  },
+  {
+    "objectID": "lessons_learnt.html#challenges-we-faced",
+    "href": "lessons_learnt.html#challenges-we-faced",
+    "title": "Lessons Learnt",
+    "section": "",
+    "text": "Gathering hard geographical visualization data to justify our points proved to be rather difficult. A lot of reliable, accessible geographical data was paywalled under ARCGis, so we had to find workarounds for that, while ensuring the same level of firsthand accuracy that we aspired to. This is why we resorted using the USGS Earthfinder to find specific raster maps for conversion, as well as using NASA’s POWER project, which while reliable, was a somewhat esoteric data source, specifically when it came to an aspect like solar irradiation, where figures are quoted, but specific, detailed sourcing proved hard to find.\nSingapore particularly proved to be somewhat challenging to really build an interesting case study around. Much of the available geographical data, most of which was in the raster format, failed to capture existing geographical variations within Singapore, given their lower resolution. The one exception was the USGS topography data. Additionally, Singapore itself lacks the temperature or irradiation variance to meaningfully provide any justifications to build farms in one area over another."
+  },
+  {
+    "objectID": "lessons_learnt.html#future-work",
+    "href": "lessons_learnt.html#future-work",
+    "title": "Lessons Learnt",
+    "section": "",
+    "text": "Explore the possibility of building installations on the rooftops of industrial buildings, seeing that Singapore has a significant proportion of land being occupied by industrial installations.\nGo more in depth into agrivoltaics, more precisely into the infrastructure needed and the measures to be made for the panels to coexist effectively with the existing agricultural infrastructure"
   }
 ]
