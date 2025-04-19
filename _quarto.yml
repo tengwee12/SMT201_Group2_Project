@@ -21,6 +21,8 @@ website:
             href: methodology_site_identification.qmd
           - text: "Solar Farm Analysis and Calculations"
             href: solar_farm_calculations.qmd
+          - text: "Conclusion"
+            href: conclusion.qmd
       - text: "Lessons Learnt"
         href: lessons_learnt.qmd
       - text: "Poster"
