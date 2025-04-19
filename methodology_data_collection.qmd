@@ -1,0 +1,17 @@
+---
+title: "Data Collection"
+format:
+  html:
+    toc: true
+    toc-title: "On this page"
+    toc-location: right
+    page-layout: full
+---
+The following datasets were utilised in this project to inform decision-making and analysis.
+
+| Dataset Name | Source                           | Description                   |
+|--------------|----------------------------------|-------------------------------|
+| Dataset A    | [gov.example](https://gov.example) | Contains city zoning info     |
+| Dataset B    | [solar.org](https://solar.org)     | Solar radiation measurements  |
+| Dataset C    | [Survey](https://example.com/survey) | On-site inspection results    |
+

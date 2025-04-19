@@ -9,8 +9,6 @@ website:
         href: index.qmd
       - text: "Methodology"
         menu: # This indicates a dropdown menu
-          - text: "Research"
-            href: methodology_research.qmd
           - text: "Data Collection"
             href: methodology_data_collection.qmd
           - text: "Data Preparation"

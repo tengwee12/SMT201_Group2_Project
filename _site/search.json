@@ -19,5 +19,33 @@
     "title": "Project Proposal",
     "section": "Land Usage",
     "text": "Land Usage"
+  },
+  {
+    "objectID": "methodology_data_collection.html",
+    "href": "methodology_data_collection.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "The following datasets were utilised in this project to inform decision-making and analysis.\n\n\n\nDataset Name\nSource\nDescription\n\n\n\n\nDataset A\ngov.example\nContains city zoning info\n\n\nDataset B\nsolar.org\nSolar radiation measurements\n\n\nDataset C\ncustom survey\nOn-site inspection results"
+  },
+  {
+    "objectID": "methodology_data_collection.html#dataset-a",
+    "href": "methodology_data_collection.html#dataset-a",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Description of Dataset A…"
+  },
+  {
+    "objectID": "methodology_data_collection.html#dataset-b",
+    "href": "methodology_data_collection.html#dataset-b",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Description of Dataset B…"
+  },
+  {
+    "objectID": "methodology_data_collection.html#dataset-c",
+    "href": "methodology_data_collection.html#dataset-c",
+    "title": "Data Collection",
+    "section": "",
+    "text": "Description of Dataset C…"
   }
 ]
