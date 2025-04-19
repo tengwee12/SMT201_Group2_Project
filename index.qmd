@@ -40,4 +40,4 @@ Our Project aims to analyze, document and visualize different areas of concern, 
 
 # Project Schedule (Gantt Chart)
 
-![ganttchart](ganttChart.jpg)
+![ganttchart](./assets/ganttChart.jpg)

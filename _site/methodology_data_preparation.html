@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Solar Farm Analysis and Calculations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./conclusion.qmd">
+    <a class="dropdown-item" href="./conclusion.html">
  <span class="dropdown-text">Conclusion</span></a>
   </li>  
     </ul>
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Since we wish to avoid placing solar farms within close proximity of nature reserves, we used the buffer tool to create a 1km radius dissolved buffer zone around the centroid of each natural reserve.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="nature_reserves.jpg" class="img-fluid figure-img"></p>
+<p><img src="./assets/nature_reserves.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig 1.1, Natural Reserve Buffer</figcaption>
 </figure>
 </div>
@@ -181,14 +181,14 @@ ul.task-list li input[type="checkbox"] {
 <p>MODIS is a satellite-based sensor aboard NASA’s Terra and Aqua satellites, capturing Earth’s surface conditions daily since 2000. It provides high-quality measurements across multiple bands, including thermal infrared, essential for analyzing Land Surface Temperature (LST).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="temperature_data.jpg" class="img-fluid figure-img"></p>
+<p><img src="./assets/temperature_data.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig 1.2, NASA LST temperature data acquisition</figcaption>
 </figure>
 </div>
 <p>AppEEARS is an online platform provided by NASA designed to simplify extraction and analysis of Earth observation datasets. It offers easy access to MODIS data and provides GIS-ready files in GeoTIFF format. We decided to use NASA APPEEARS data for our surface temperature data sources. The request was crafted to download data in GeoTiff format for better processing in QGIS. We decided to download the data for Terra MODIS Land Surface Temperature and Emmisivity, which uses thermal infrared bands 29, 31, and 32, which are the most crucial for the algorithms that determine both land surface temperature and emissivity.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="temperature_results.jpg" class="img-fluid figure-img"></p>
+<p><img src="./assets/temperature_results.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig 1.3, NASA LST temperature data results graph</figcaption>
 </figure>
 </div>
@@ -202,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 <p>We settled on the ALLSKY_SFC_SW (All Sky Surface Shortwave Downward Irradiance) parameter for our API request since it corresponded to the irradiation data we needed for our investigation. The parameters for latitude and longitude were carefully chosen to be within Singapore’s land boundaries.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="isolated_solar_data.jpg" class="img-fluid figure-img"></p>
+<p><img src="./assets/isolated_solar_data.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig 1.4, POWER Project API call result JSON result</figcaption>
 </figure>
 </div>
@@ -211,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The chosen resolution for CERES supports our inference that apart from elevation, Singapore lacks the geographical variance to have any intrinsic geographical bias when choosing a location for a solar farm.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="masterfile_data.jpg" class="img-fluid figure-img"></p>
+<p><img src="./assets/masterfile_data.jpg" class="img-fluid figure-img"></p>
 <figcaption>Fig 1.5, NASA LST temperature data results collation</figcaption>
 </figure>
 </div>

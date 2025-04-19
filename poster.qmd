@@ -4,4 +4,4 @@ format: html
 ---
 Team Poster:
 
-![Poster](SMT%20Ponster.jpg)
+![Poster](./assets/SMT%20Ponster.jpg)

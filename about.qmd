@@ -1,4 +1,12 @@
 ---
-title: "Abowwwwut"
+title: "About"
 format: html
 ---
+
+We are Team 2! Comprising of Lim Jin Kit Ryan, Mikhail Aquilino, and Ong Teng Wee!
+
+GitHub Repository: 
+
+# LinkedIn Profiles
+
+Ryan: [https://www.linkedin.com/in/ryanlimjk/](https://www.linkedin.com/in/ryanlimjk/)
