@@ -60,6 +60,6 @@
     "href": "pages/map.html",
     "title": "Web Map",
     "section": "",
-    "text": "The map below displays 4 groups of visualisations:"
+    "text": "The map below displays groups of visualisations:\nSG Open Space: Overview of Singapore, contains data on areas to consider and avoid Buffer Zones: Overview of identified area of interest (Lim Chu Kang + Murai), with buffer zones to accomodate natural reserves POI: Place of Interest containing all land space that is considered potentially viable Rivers: Considering the suitability of the rivers in our POI for solar farm installations LCK: Considering the suitability of Lim Chu Kang in our POI for solar farm installations"
   }
 ]
