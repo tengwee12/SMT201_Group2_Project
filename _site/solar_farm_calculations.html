@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Collection – 新女神転生</title>
+<title>solar_farm_calculations – 新女神転生</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,75 +153,163 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Data Collection</h1>
+
+
+
+<section id="determining-most-viable-area" class="level1">
+<h1>Determining Most Viable Area</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/analysis_0.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1.1</figcaption>
+</figure>
 </div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>The following datasets were utilised in this project to inform decision-making and analysis.</p>
+<p>We determined the most viable area as two main subzones: Murai and Lim Chu Kang. They possess one of the largest connected open spaces within Master Plan 2019, which would be hugely beneficial for maximising solar panel placement.</p>
+<p>Solar farms can be harmful to the environment, as their construction process disturbs existing migration pathways and can cause soil erosion. As such, we will have a 1km radius buffer zone surrounding these nature reserves whereby the covered land space is deemed unsuitable.</p>
+</section>
+<section id="analysing-slope-and-aspect" class="level1">
+<h1>Analysing Slope and Aspect</h1>
+<p>Solar farms benefit from being placed on flat terrain with minimal slope degree. As such, finding areas that already possess a low slope degree would be the most optimal, since there would be no need for terraforming.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/analysis_1.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1.2</figcaption>
+</figure>
+</div>
+<p>As observed, Lim Chu Kang possesses extremely low slope degrees, making it particularly suitable for solar farm construction. Sarimbun and Murai Reservoir have relatively high slope degree, making them unappealing, whereas Poyan Reservoir’s immediate surrounding land has low slope degree, making it potentially optimal for PV farm construction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/analysis_2.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1.3</figcaption>
+</figure>
+</div>
+<p>For aspect data, since Singapore lies on the Northern Hemisphere it would technically benefit from southern topology slopes for placing solar panels due to the way the sun moves during the day. This makes the northern shoreline of Poyan Reservoir somewhat better at collecting sunlight. However, since Singapore is so close to the equator, this benefit is virtually negligible since the sun will be overhead during noon, and while other areas like Lim Chu Kang could be considered to be more ‘suboptimal’, this difference is not a glaring concern.</p>
+</section>
+<section id="lim-chu-kang" class="level1">
+<h1>Lim Chu Kang</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/analysis_3.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1.4</figcaption>
+</figure>
+</div>
+<p>Even after we accommodate a 1km radius buffer zone for nature reserves in Lim Chu Kang, there is still a sizable amount of space left. This space is largely free, with some areas on the fringes being utilised for agricultural purposes. There is a decent amount of buildings in the area, which could be leveraged for auxiliary purposes in the solar farms (eg. offices, storing inverters, solar farm substations to connect to the main electrical grid).</p>
+<p><strong>From the positioning of the internal roads within Lim Chu Kang, we propose the following plan to maximise space for solar panel placement:</strong></p>
+<ul>
+<li>The area 0-5m from the roads should not have any sort of infrastructure on them. This provides a sort of buffer space, reserved for placement of power lines, drainages, or just as emergency access for vehicles.</li>
+<li>5-10m from the roads should be used for vegetation screening, whereby plants are placed on this area range for the express purpose of obstructing wind and dust from striking and potentially wearing away at the solar panels, whilst also maintaining the local aesthetic of the area. Since Singapore is called a ‘Garden City’, maintaining this image and reputation can only be beneficial.</li>
+<li>10-15m from the roads is reserved for fencing, which should be a chain-link mesh around 2-2.5 meters in height to deter trespassers, and the fence should be 0.5-1 meter away from the vegetation screening for maintenance access.</li>
+<li>15-20m from the roads, behind the fencing, is where drainage swales should be created. These drainages would help to manage and capture runoff from the solar panels, reducing the risk of water damage to the solar panels and damage due to soil erosion affecting the infrastructure’s structural integrity. This is especially important when considering that Singapore has two monsoon seasons.</li>
+</ul>
+<p>As an additional bonus, there is worth in considering the concept of agrivoltaics, defined as the act of using the same land for both agriculture farming and solar panel placement. Typically, crops or livestock would be situated underneath or adjacent to the solar panels. Considering Singapore’s already limited and quickly shrinking available land space, being able to maximise the efficiency of every square meter of land is vital. Additionally, the presence of the solar panels also provides side benefits: the partial shading provided assists in lowering soil/air temperatures, and also protects the crops from harsh weather conditions.</p>
+<p>It should be noted that agricultural projects have already been roadmapped within the Lim Chu Kang area in the past. For instance, in 2020, there were plans to transform Lim Chu Kang into a high-productivity agricultural food zone, as announced by the Singapore Food Agency (SFA), but this plan has since been delayed. This solar farm initiative could assist in reviving the feasibility of this plan, as their long-term sustainability goals align and complement each other.</p>
+</section>
+<section id="poyan-reservoir" class="level1">
+<h1>Poyan Reservoir</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/analysis_4.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1.5</figcaption>
+</figure>
+</div>
+<p>Poyan Reservoir’s shorelines are of relatively low slope degrees, which makes them optimal for placing supporting infrastructure like inverters or housing substations, with room for more land intensive structures like battery storage arrays, whilst the solar panels themselves can be installed onto a floating platform covering Poyan Reservoir. There is relatively little existing building infrastructure, so that would be one of the shortcomings that has to be addressed if there are any plans to build a solar farm in this area. However, due to the good connectivity of this place, as supported by the placement of road infrastructure, this would make the construction process easier as materials can still be transported without much difficulty.</p>
+<p>A potential concern we had was that since Poyan Reservoir technically fell within the boundary area of the Singapore Armed Forces (being within the SAFTI Live Firing Area), that would make installation of a solar farm impossible. However, Tengeh Reservoir also falls within the SAFTI Live Firing Area, and since a solar farm already exists there, we came to the conclusion that there was still potential for Poyan Reservoir to host a solar farm of its own.</p>
+<p>Due to the fact that the idea is to have a floating solar farm here, there would be less of a need for drainage swales. Vegetation screening can be considered, but since this area’s road infrastructure is far less concentrated as compared to Lim Chu Kang, its effectiveness may not be worth the cost. Fences can also be set up if so desired, but since the area is on military land the risk of trespassers is far lower.</p>
+<p>Seeing that photovoltaic farms require minimal maintenance, and individual panels are rated to last several decades before replacement, the impact of maintenance on a potential solar farm in this military-cordoned area should not be much of a concern.</p>
+</section>
+<section id="murai-subzone" class="level1">
+<h1>Murai Subzone</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/analysis_5.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1.6</figcaption>
+</figure>
+</div>
+<p>Another area we considered is this corner of the Murai Subzone. Particularly, we extracted out the land use patterns for this to highlight the potential of this plot of land for agrivoltaic usage (dual-use land for agriculture and solar farm). As can be observed from this visualisation, a majority of the land here is allocated for agriculture. However, this agricultural land is far from contiguously spaced, with many buildings and roads interspersed within. This follows the same land usage distribution for the Lim Chu Kang agrivoltaic potential zone, and as such, our recommendations for a potential agrivoltaic solar farm for this area should follow the same recommended guidelines as specified for Lim Chu Kang.</p>
+<p>Solar Farm Estimations and Calculations From the solar irradiation data, the numbers we obtained are:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Dataset Name</th>
-<th>Source</th>
-<th>Description</th>
+<th>Parameter</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Master Plan 2019</td>
-<td><a href="https://www.ura.gov.sg/">https://www.ura.gov.sg/</a></td>
-<td>Contains city land allocation usage GEOJSON data</td>
+<td>Total Irradiation in 2020 (kWh/m²)</td>
+<td>1680</td>
 </tr>
 <tr class="even">
-<td>Solar Irradiation Data</td>
-<td><a href="https://power.larc.nasa.gov/">https://power.larc.nasa.gov/</a></td>
-<td>NASA project providing data on prospective renweable energy potential</td>
+<td>Average Solar Panel Efficiency (%)</td>
+<td>20</td>
 </tr>
 <tr class="odd">
-<td>Singapore Topographical Data</td>
-<td><a href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></td>
-<td>United States Geographical Service Earth Explorer platform, provided DEM data sets for Topographical data in the Singapore region</td>
-</tr>
-<tr class="even">
-<td>NParks Parks and Nature Reserves</td>
-<td><a href="https://data.gov.sg/datasets?query=nature+reserves&amp;resultId=d_77d7ec97be83d44f61b85454f844382f&amp;page=1">https://data.gov.sg/datasets?query=nature+reserves&amp;resultId=d_77d7ec97be83d44f61b85454f844382f&amp;page=1</a></td>
-<td>Contains nature reserves in Singapore, under the purview of NParks</td>
-</tr>
-<tr class="odd">
-<td>gis_osm_buildings_a_free_1</td>
-<td><a href="https://download.geofabrik.de/asia/malaysia-singapore-brunei.html">https://download.geofabrik.de/asia/malaysia-singapore-brunei.html</a></td>
-<td>Contains dataset on buildings in Singapore</td>
-</tr>
-<tr class="even">
-<td>gis_osm_roads_free_1</td>
-<td><a href="https://download.geofabrik.de/asia/malaysia-singapore-brunei.html">https://download.geofabrik.de/asia/malaysia-singapore-brunei.html</a></td>
-<td>Contains dataset on roads in Singapore</td>
+<td>DC to AC Conversion Factor</td>
+<td>1.29</td>
 </tr>
 </tbody>
 </table>
+<p>Solar panel efficiency was derived from Google searches.</p>
+<p>Since solar panels generate DC electricity, and appliances use AC, we calculate the conversion by referring to Chapter 6.1 in SES 2024: * P = average of “inst_cap_mwp” * AC = average of “inst_cap_mwac” * Conversion Factor = P / AC</p>
+<p>Calculate the total power output per m2 annually to be 0.2 * 1680 = 336 kWh DC.</p>
+<p>Converting the output into AC, 336 / 1.29 = 260.4 kWh AC.</p>
+<p>Hence, 1m2 of solar panel coverage can provide 260.4 kWh AC of power annually.</p>
+<p>Before merging these numbers with the total area within our target regions, we need to keep in mind that it is not possible to achieve 100% solar panel coverage for any piece of land.</p>
+<ul>
+<li>About 40-60% of open land is usable for solar panel deployment. We decided to take a conservative estimate of 45%.</li>
+<li>An aquatic solar farm exists at Tengeh reservoir. About 35% of the reservoir is used for that. We decided to follow it.</li>
+<li>On average, the coverage of solar farms in agrivoltaics farms is around 10-50%. We decided to take the average of that.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 23%">
+<col style="width: 20%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Lim Chu Kang (Open Space)</th>
+<th>Reservoirs (Floating)</th>
+<th>Murai (Agrivoltaics)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Total Area (m²)</td>
+<td>4 691 840</td>
+<td>7 774 950</td>
+<td>5 046 540</td>
+</tr>
+<tr class="even">
+<td>Total Annual AC (kWh)</td>
+<td>1 221 877 136</td>
+<td>2 024 280 780</td>
+<td>1 314 133 416</td>
+</tr>
+<tr class="odd">
+<td>Solar Panel Coverage (%)</td>
+<td>45</td>
+<td>35</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td><strong>Overall Annual AC Provided (kWh)</strong></td>
+<td><strong>549 844 711.2</strong></td>
+<td><strong>708 498 273.0</strong></td>
+<td><strong>394 240 024.8</strong></td>
+</tr>
+</tbody>
+</table>
+<p>From the results, we determined that Lim Chu Kang and the reservoirs would boast the greatest cost-benefit ratio for energy production.. * Leveraging open, mostly unallocated space is the most feasible avenue to deploy scalable solar farms. Additionally, it does not compete with the scarce land that Murai has. * As mentioned above, a solar farm already exists at Tengeh reservoir, which is an excellent proof of concept. By following its implementations and improving upon them, deploying solar farms in surrounding reservoirs has a high likelihood of success.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
